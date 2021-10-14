@@ -1,4 +1,4 @@
 # LR-nonparametric-regression
 
-Code for the paper "Label Ranking through Nonparametric Regression" 
+Code and data sets for the paper "Label Ranking through Nonparametric Regression" 
 
