@@ -1,4 +1,13 @@
 # -*- coding: utf-8 -*-
+"""Mallows Model Generator.
+
+This file allows the user to generate samples for Mallows Model.
+
+Created for 'Label Ranking through Nonparametric Regression'
+
+@author:
+
+"""
 
 import numpy as np
 from itertools import permutations
