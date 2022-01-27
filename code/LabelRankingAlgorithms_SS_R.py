@@ -112,9 +112,9 @@ def main(processes=5):
     base_data_path = ['LR_DATASETS']
     if datasets_choice == 'semi-synthetic':
         dataset_grid = ['authorship', 'bodyfat', 'calhousing', 'cpu-small',
-                        'elevators', 'fried', 'glass', 'iris', 'pendigits',
-                        'segment', 'stock', 'vehicle', 'vowel', 'wine',
-                        'wisconsin']
+                        'elevators', 'fried', 'glass', 'housing', 'iris',
+                        'pendigits', 'segment', 'stock', 'vehicle', 'vowel',
+                        'wine', 'wisconsin']
     elif datasets_choice == 'real':
         dataset_grid = ['cold', 'diau', 'dtt', 'heat', 'spo']
     else:

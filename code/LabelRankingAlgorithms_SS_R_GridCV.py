@@ -96,13 +96,13 @@ def main():
     print(now)
 
     random_state = 42
-    datasets_choice = 'semi-synthetic'
+    datasets_choice = 'housing'
     base_data_path = ['LR_DATASETS']
     if datasets_choice == 'semi-synthetic':
-        dataset_grid = ['authorship', 'bodyfat', 'calhousing', 'cpu-small',
-                        'elevators', 'fried', 'glass', 'iris', 'pendigits',
-                        'segment', 'stock', 'vehicle', 'vowel', 'wine',
-                        'wisconsin']
+        dataset_grid = [['authorship', 'bodyfat', 'calhousing', 'cpu-small',
+                        'elevators', 'fried', 'glass', 'housing', 'iris',
+                        'pendigits', 'segment', 'stock', 'vehicle', 'vowel',
+                        'wine', 'wisconsin']]
     elif datasets_choice == 'real':
         dataset_grid = ['cold', 'diau', 'dtt', 'heat', 'spo']
     else:
