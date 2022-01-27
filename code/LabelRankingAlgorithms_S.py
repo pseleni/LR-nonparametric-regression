@@ -184,13 +184,28 @@ def main(processes=5):
                 f.close()
 
                 f = open(base+datasets_choice+'results_rf.txt', 'a')
-                f.write(datasets_choice+','+str(np.round(alpha,5))+','+str(np.round(beta,5))+','+str(np.round(np.mean(L_results_kendall_coeff_RF),3))+','+ str(np.round(np.std(L_results_kendall_coeff_RF),3))+'\n')
+                f.write(datasets_choice+','+str(np.round(alpha, 5))
+                        + ',' + str(np.round(beta, 5)) + ','
+                        + str(np.round(np.mean(L_results_kendall_coeff_RF), 3))
+                        + ','
+                        + str(np.round(np.std(L_results_kendall_coeff_RF), 3))
+                        + '\n')
                 f.close()
                 f = open(base+datasets_choice+'results_dt.txt', 'a')
-                f.write(datasets_choice+','+str(np.round(alpha,5))+','+str(np.round(beta,5))+','+str(np.round(np.mean(L_results_kendall_coeff_DT),3))+','+str(np.round(np.std(L_results_kendall_coeff_DT),3))+'\n')
+                f.write(datasets_choice+','+str(np.round(alpha, 5))
+                        + ',' + str(np.round(beta, 5)) + ','
+                        + str(np.round(np.mean(L_results_kendall_coeff_DT), 3))
+                        + ',' +
+                        str(np.round(np.std(L_results_kendall_coeff_DT), 3))
+                        + '\n')
                 f.close()
                 f = open(base+datasets_choice+'results_dts.txt', 'a')
-                f.write(datasets_choice+','+str(np.round(alpha,5))+','+str(np.round(beta,5))+','+str(np.round(np.mean(L_results_kendall_coeff_DTS),3))+','+str(np.round(np.std(L_results_kendall_coeff_DTS),3))+'\n')
+                f.write(datasets_choice + ',' + str(np.round(alpha, 5)) + ','
+                        + str(np.round(beta, 5)) + ','
+                        + str(np.round(np.mean(L_results_kendall_coeff_DTS), 3))
+                        + ','
+                        + str(np.round(np.std(L_results_kendall_coeff_DTS), 3))
+                        + '\n')
                 f.close()
     except KeyboardInterrupt:
         print("Caught KeyboardInterrupt, terminating workers")
